@@ -1,5 +1,5 @@
 @import 'vars';
-@import 'vendor/reset.scss';
+@import 'vendor/reset';
 
 html {
   font-size: 10px;
@@ -14,3 +14,16 @@ body {
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Blocks */
+@import 'blocks/page.scss';
+@import 'blocks/header';
+@import 'blocks/sidebar';
+@import 'blocks/main';
+@import 'blocks/container';
